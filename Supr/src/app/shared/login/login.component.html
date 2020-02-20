@@ -1,0 +1,52 @@
+<body>
+        <div class="container"  >
+          <div id="div">
+            <a routerLink="/signup" id="hai"><b>New User!! Register Here</b></a><br><br>
+            <div [formGroup]="loginform">
+            <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label" >
+                        <b> mobile number</b>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="mobile number" formControlName="mobile" >
+                    </div>
+                    <div class="hh" >
+                            <span  *ngIf="loginform.controls['mobile'].errors && loginform.controls['mobile'].touched">* mobile number is mandatory with 10 numbers</span>
+                        </div>
+                  </div>
+
+                 
+
+
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Password</b></label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" formControlName="password">
+                    </div>
+                    <div class="hh" >
+                            <span  *ngIf="loginform.controls['password'].errors && loginform.controls['password'].touched">* fill the password textbox mandatory </span>
+                        </div>
+                  </div>
+                  <div class="form-group row">
+                        <div class="col-sm-10">
+                                <button class="btn btn-primary"  (click)="login()"[disabled]="!loginform.valid">Login</button>
+                                
+                                  <button class="btn btn-secondary btn-style"  (click)="cancel()">Cancel</button> 
+                        </div>
+                        
+                           
+                          
+
+                      </div>
+
+                </div>
+
+
+
+                        
+     
+        </div>
+    </div>
+
+  </body>
+  

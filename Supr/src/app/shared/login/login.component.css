@@ -1,0 +1,23 @@
+#hai{
+    color:rgb(70, 186, 224)
+}
+.hh{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(24, 23, 23);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+body{
+    background-color:hsla(62, 74%, 90%, 0.76);;
+    
+}
+
+.btn-style{
+    margin-left: 10px;
+}

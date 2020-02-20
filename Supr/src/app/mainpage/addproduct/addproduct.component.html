@@ -1,0 +1,41 @@
+
+  <div class="card" style="width:px;display: inline-block;" *ngFor="let p of products" >
+    <img class="card-img-top" [src]="p.image" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{p.name}}</h4>
+      <p class="card-text">price:{{p.price}}</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+      (click)="update(p)">view more</button>
+      
+    </div>
+  </div>
+  <div class="modal" id="myModal" *ngIf="cp">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">{{cp.name}}</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <b> name:{{cp.name}} <br/>
+            price:{{cp.price}}  <br/>
+            categeory:{{cp.categeory}} <br/>
+            rating:{{cp.rating}}  </b>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal" (click)="addcart()">add cart</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+        </div>
+        
+    
+      </div>
+    </div>
+  </div>
+  

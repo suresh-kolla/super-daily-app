@@ -1,0 +1,19 @@
+.hh{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(71, 60, 60);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+#div{
+    padding: 10px;
+}
+body{
+    background-color:hsla(62, 74%, 90%, 0.76);;
+    
+}

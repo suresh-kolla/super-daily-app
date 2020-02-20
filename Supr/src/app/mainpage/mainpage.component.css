@@ -1,0 +1,42 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgb(235, 140, 140);
+  border-radius: 10%;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+#qq {
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+#qq1{
+  position: absolute;
+  left: 105px;
+  top: 200px;  
+  margin-top: 30px;
+}

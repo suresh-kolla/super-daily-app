@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">cart</h1>
+<div class="card" style="width:px;display: inline-block;" *ngFor="let p of hai" >
+    <img class="card-img-top" [src]="p.image" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{p.name}}</h4>
+      <p class="card-text">price:{{p.price}}</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+      (click)="u()">buy</button>
+      
+    </div>
+  </div>
